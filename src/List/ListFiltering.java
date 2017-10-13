@@ -30,6 +30,10 @@ public class ListFiltering {
 		System.out.println(allints);
 		int sum = ilit.stream().collect(Collectors.summingInt(Integer::intValue));
 		System.out.println("Sum = "+sum);
+		
+		Object [] a =ilit.toArray();
+		Integer [] arr = ilit.toArray(new Integer[0]);
+		System.out.println(arr.length);
 	}
 	public static void increment() {
 		count++;
