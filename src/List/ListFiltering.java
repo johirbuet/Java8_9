@@ -31,7 +31,9 @@ public class ListFiltering {
 		int sum = ilit.stream().collect(Collectors.summingInt(Integer::intValue));
 		System.out.println("Sum = "+sum);
 		
+		// The way to convert to obect array
 		Object [] a =ilit.toArray();
+		// But if we know the type of the Collection then we can create array with the type
 		Integer [] arr = ilit.toArray(new Integer[0]);
 		System.out.println(arr.length);
 	}
