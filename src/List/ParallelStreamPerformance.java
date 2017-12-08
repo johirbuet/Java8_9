@@ -7,8 +7,8 @@ import java.util.Random;
 /**
  * 
  * @author johir
- * Wonderfull observation..
- * stream and parallelstream not correctly behaving
+ * The method count is syncronized because it will be used by parallelstream
+ * Another way can be to use AtomicInteger
  *
  */
 public class ParallelStreamPerformance {
