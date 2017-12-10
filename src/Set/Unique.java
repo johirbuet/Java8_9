@@ -24,5 +24,6 @@ public class Unique {
 		unique.removeAll(dup);
 		System.out.println(unique);
 		System.out.println(dup);
+		
 	}
 }
